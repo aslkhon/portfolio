@@ -1,0 +1,209 @@
+body {
+  margin: 0px;
+
+  font-family: 'Merriweather';
+  * {
+    // border: black solid 1px;
+  }
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  padding: 0vh 20vw;
+
+  * {
+    margin: 0px;
+    flex-direction: column;
+    display: flex;
+    padding: 0.5em 0em;
+    transform: translateY(7vh);
+
+    h1 {
+      font-size: 4em;
+      font-family: 'Playfair Display';
+      font-weight: bold;
+      animation-duration: 2s;
+    }
+
+    .sub {
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+
+    p {
+      font-family: 'Merriweather';
+      font-size: 1.1em;
+      line-height: 1.7em;
+      width: 50%;
+      animation-duration: 2s;
+    }
+  }
+}
+
+.icons {
+  max-height: 7vh;
+  width: 50vw;
+  display: flex;
+  margin: auto;
+  padding-bottom: 5em;
+
+  div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      height: 7vh;
+      color: red;
+    }
+  }
+}
+
+.cases {  
+  display: flex;
+  flex-direction: column;
+  padding: 5em 10vw;
+  background-color: #eee;
+
+  h1 {
+    font-family: "Playfair Display";
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 1em;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20vh;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    // @media (max-width: 1024px) {
+    // } 
+    @media (min-width: 1025px) {
+      flex: 1;
+    }
+
+    // max-width: 50%;
+
+    img {
+      vertical-align: middle;
+      width: 95%;
+      padding-left: 2.5%;
+      margin-bottom: 5%;
+    }
+  }
+}
+
+.magazines { 
+  display: flex;
+  padding: 0vh 15vw;
+  margin-bottom: 20vh;
+  flex-direction: column;
+
+  h1 {
+    font-family: 'Playfair Display';
+    font-size: 3em;
+    margin: 2em auto;
+  }
+
+  .start {
+    justify-content: flex-start;
+
+    h1 {
+      text-align: left !important;
+    }
+  }
+
+  .end {
+    justify-content: flex-end;
+  }
+
+  .block {
+    flex: 1;
+    display: flex;
+    margin: 5vh 0vh;
+
+    div {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 90%;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        transition: all 1s ease-out;
+      }
+
+      h1 {
+        font-family: 'Raleway';
+        font-size: 4em;
+        margin: 0em;
+        text-align: right;
+
+        span {
+          font-weight: 400;
+          font-size: 0.7em;
+        }
+      }
+
+      .right {
+        padding-left: 10%;
+      }
+    }
+  }
+}
+
+.contact {
+  text-align: center;
+  padding-bottom: 5em;
+  font-family: 'Playfair Display';
+
+  a {
+    color: #0BBBEF;
+    text-decoration: none;
+    transition: all .2s ease-out;
+  }
+
+  a:hover {
+    color: #0a87ad;
+  }
+
+  a:visited {
+    color: #0a87ad;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: #eee;
+
+  a {
+    text-decoration: none;
+    color: #0BBBEF;
+  }
+
+  a:hover {
+    color: #0a87ad;
+  }
+
+  a:visited {
+    color: #0a87ad;
+  }
+
+  a:hover {
+    transform: scale(1.1);
+    transition: all 0.25s ease-out;
+  }
+}
